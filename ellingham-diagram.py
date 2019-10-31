@@ -117,19 +117,22 @@ ax.tick_params(axis='both',which='major', length=5, labelsize=TickFontSize)
 
 X = 25
 Y = 16
-ax.text(X, y=0.565, s='1', color='red', fontsize=Y, weight='bold')    # 2Mn3O4 + 6WO3 -> 6MnWO4 + O2
-ax.text(X, y=0.92, s='2', color='blue', fontsize=Y, weight='bold')  # 4MnO2 -> 2Mn2O3 + O2
+
+ax.text(X, y=0.565, s='1', color='blue', fontsize=Y, weight='bold')    # 2Mn3O4 + 6WO3 -> 6MnWO4 + O2
+ax.text(X, y=0.92, s='2', color='red', fontsize=Y, weight='bold')  # 4MnO2 -> 2Mn2O3 + O2
 ax.text(X, y=1.15, s='3', color='tomato', fontsize=Y, weight='bold')     # 2MnO2 + 2WO3 -> 2MnWO4 + O2
 ax.text(X, y=1.38, s='4', color='lightgreen', fontsize=Y, weight='bold') # 2Mn2O3 + 4WO3 -> 4MnWO4 + O2
 ax.text(X, y=2.29, s='5', color='orange', fontsize=Y, weight='bold')     # 6Mn2O3 -> 4Mn3O4 + O2
 
-#reaction
+
+# reaction
 lw = 2
 ax.plot(x, y1, color='lightblue', lw=lw)  # 4MnO2 -> 2Mn2O3 + O2
 ax.plot(x, y2, color='orange', lw=lw)     # 6Mn2O3 -> 4Mn3O4 + O2
 ax.plot(x, y3, color='tomato', lw=lw)     # 2MnO2 + 2WO3 -> 2MnWO4 + O2
 ax.plot(x, y4, color='lightgreen', lw=lw) # 2Mn2O3 + 4WO3 -> 4MnWO4 + O2
 ax.plot(x, y5, color='silver', lw=lw)     # 2Mn3O4 + 6WO3 -> 6MnWO4 + O2 
+
 
 # pressure
 X1 = 1000
@@ -139,6 +142,7 @@ ax.text(X1, y=0.65, s='10⁻² atm', rotation=7, fontsize=Y1)
 ax.text(X1, y=1.23,  s='10⁻⁴ atm',  rotation=15, fontsize=Y1)
 ax.text(X1, y=1.85,  s='10⁻⁶ atm',  rotation=25, fontsize=Y1)
 ax.text(X1, y=2.47 ,  s='10⁻⁸ atm',  rotation=30, fontsize=Y1)
+
 
 lw2 = 0.5
 ax.plot(x, p1, '--', color='black', lw=lw2)
