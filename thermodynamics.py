@@ -141,11 +141,3 @@ if __name__ == "__main__":
     print('temperature_to_mu: ', mu.print_mu_corresponding_to_temperature_equals(1623))
     print('mu_to_temperature: ', mu.print_temperature_corresponding_to_mu_equals(-6.96))
 
-#     for i in range(273, 1623):
-        
-#         entropy = round(mu.entropy(i)/mu.JmolK_to_eVK, 3)
-#         enthalpy = round(mu.enthalpy_minusRef(i)/mu.kJmol_to_eV, 3)
-#         print('temperature_to_mu: ', mu.print_mu_corresponding_to_temperature_equals(i), entropy, enthalpy)
-      
-    
-#print('mu_to_temperature: ', mu.print_temperature_corresponding_to_mu_equals(-0.0005848046330783063))
